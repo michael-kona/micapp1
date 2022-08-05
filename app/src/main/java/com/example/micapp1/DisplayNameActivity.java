@@ -28,8 +28,8 @@ public class DisplayNameActivity extends AppCompatActivity
         TextView toast_txt_view=(TextView)toast_layout.findViewById(R.id.textView4);
         toast_txt_view.setText(message);
 
-        ImageView toast_img_view=(ImageView) toast_layout.findViewById(R.id.imageView);
-        toast_img_view.setImageResource(R.drawable.avatar);
+        ImageView toast_img_view=(ImageView) toast_layout.findViewById(R.id.imageView1);
+        toast_img_view.setImageResource(R.mipmap.ic_launcher);
         //custom toast
         Toast t=new Toast(this.getApplicationContext());
         t.setDuration(Toast.LENGTH_LONG);
