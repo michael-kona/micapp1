@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,9 @@ public class DisplayNameActivity extends AppCompatActivity
         View toast_layout=li.inflate(R.layout.custom_toast_layout,(ViewGroup)findViewById(R.id.custom_toast_root));
         TextView toast_txt_view=(TextView)toast_layout.findViewById(R.id.textView4);
         toast_txt_view.setText(message);
+
+        ImageView toast_img_view=(ImageView) toast_layout.findViewById(R.id.imageView);
+        toast_img_view.setImageResource(R.drawable.avatar);
         //custom toast
         Toast t=new Toast(this.getApplicationContext());
         t.setDuration(Toast.LENGTH_LONG);
